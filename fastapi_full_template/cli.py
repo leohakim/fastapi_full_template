@@ -9,7 +9,7 @@ from .security import User
 from .models.content import Content
 
 
-cli = typer.Typer(name="project_name API")
+cli = typer.Typer(name="fastapi_full_template API")
 
 
 @cli.command()
@@ -21,7 +21,7 @@ def run(
 ):  # pragma: no cover
     """Run the API server."""
     uvicorn.run(
-        "project_name.app:app",
+        "fastapi_full_template.app:app",
         host=host,
         port=port,
         log_level=log_level,
